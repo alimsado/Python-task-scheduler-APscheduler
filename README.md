@@ -14,6 +14,7 @@ This Python script is designed to automate tasks over Telnet connections to netw
 
 - Python 3.x
 - Telnetlib library (included with Python)
+- apscheduler library
 
 ## Usage
 
@@ -22,7 +23,7 @@ This Python script is designed to automate tasks over Telnet connections to netw
 2. Install any required libraries using `pip`:
 
     ```bash
-    pip install -r requirements.txt
+    pip install apscheduler
     ```
 
 3. Modify the script to specify your Telnet connection details and the commands to be executed on the device.
@@ -30,16 +31,13 @@ This Python script is designed to automate tasks over Telnet connections to netw
 4. Run the script:
 
     ```bash
-    python telnet_script.py
+    python APscheduler.py
     ```
 
-    The script will execute your specified commands, save the output to `telnet_output.txt`, and log the date and time of execution in `log-running-task.txt`.
+    The script will run any scripts that you added to your APScheduler.py to be run in specific time mine is 2-min interval, and log the date and time of each time script run in `log-running-task.txt` for later reviewing.
 
-5. If you want to automate the script to run at 2-minute intervals, consider using a scheduling tool like [APScheduler](https://apscheduler.readthedocs.io/en/stable/) or [cron](https://en.wikipedia.org/wiki/Cron). 
+5. used scheduling tool is [APScheduler](https://apscheduler.readthedocs.io/en/stable/) there is [cron](https://en.wikipedia.org/wiki/Cron) as well. 
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
@@ -47,4 +45,3 @@ This script was developed as a basic example of automating network device tasks.
 
 ---
 
-In the "Usage" section, I've added a note about automating the script using scheduling tools. You can also provide more specific instructions on setting up the automation if needed.
