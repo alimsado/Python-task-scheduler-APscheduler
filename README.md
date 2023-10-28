@@ -83,6 +83,8 @@ Both scripts provide logging functionality. They log the date and time of each s
 
 You can review the execution history by checking the `log-running-task.txt` file.
 
+Outout of each scripts uploaded into `telnet_output.txt` file.
+
 ## Contributing
 
 Contributions are welcome! If you'd like to enhance or fix issues in the scripts, please open a pull request.
